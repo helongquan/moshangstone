@@ -1,2 +1,0 @@
-# moshangstone
-GitHub Pages
