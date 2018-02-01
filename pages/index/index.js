@@ -15,9 +15,9 @@ Page({
       url: '../logs/logs'
     })
   },
-  details: function () {
+  enterinto: function () {
     wx.navigateTo({
-      url: '../about/about'
+      url: '../service/service'
     })
   },
   onLoad: function () {

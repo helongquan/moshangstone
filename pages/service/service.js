@@ -1,11 +1,13 @@
-// pages/about/about.js
+// pages/service/service.js
+var initData = 'this is first line\nthis is second line'
+var extraLine = [];
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    text:"服务中心",
   },
 
   /**
