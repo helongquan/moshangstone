@@ -8,6 +8,36 @@ Page({
    */
   data: {
     text:"服务中心",
+    title:[],
+  },
+  add: function (e) {
+    extraLine.push('other line')
+    this.setData({
+      text: initData + '\n' + extraLine.join('\n')
+    })
+  },
+  remove: function (e) {
+    if (extraLine.length > 0) {
+      extraLine.pop()
+      this.setData({
+        text: initData + '\n' + extraLine.join('\n')
+      })
+    }
+  },
+  studentinfo:function(){
+    wx.request({
+      url: 'https://www.kelin601.com/wp-json/wp/v2/posts', //仅为示例，并非真实的接口地址
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
   },
 
   /**

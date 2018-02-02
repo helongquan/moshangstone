@@ -1,7 +1,14 @@
-<view class="btn-area">
-  <view class="body-view">
-    <text>{{text}}</text>
-    <button bindtap="add">add line</button>
-    <button bindtap="remove">remove line</button>
+<view class='container'>
+  <view class='header'>
+    <view>服务中心</view>
+    <view>墨上石，十年探索wordpress</view>
+  </view>
+  <view class="btn-area">
+    <view class="body-view">
+      <button bindtap="add">添加线</button>
+      <button type="warn" bindtap="remove">移除线</button>
+      <button bindtap="studentinfo">学生信息</button>
+      <button type="primary"> 确定 </button>
+    </view>
   </view>
 </view>
